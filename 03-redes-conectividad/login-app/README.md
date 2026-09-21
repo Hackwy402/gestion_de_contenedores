@@ -74,17 +74,60 @@ docker run hello-world      # ← debe saludar (ojo: hello-world, con L final)
 mkdir ~/login-app && cd ~/login-app
 ```
 
-Crea el archivo `index.html` con el contenido que está en
-[`index.html`](index.html) de esta carpeta (cópialo completo):
+Crea el archivo `index.html` pegando este bloque **completo** en la terminal
+(crea el archivo de una sola vez, sin editor):
 
 ```bash
-vi index.html      # pega el contenido y guarda con :wq
+cat > index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal Demo · 101-EAN</title>
+<style>
+  body { margin:0; font-family:'Segoe UI',sans-serif; min-height:100vh; display:flex;
+         align-items:center; justify-content:center;
+         background:linear-gradient(135deg,#00A651,#003DA5); }
+  .card { background:#fff; padding:40px 36px; border-radius:14px; width:320px;
+          box-shadow:0 20px 50px rgba(0,0,0,.3); }
+  h1 { margin:0 0 6px; color:#0D1B4B; font-size:22px; }
+  p.sub { margin:0 0 24px; color:#5A646E; font-size:13px; }
+  label { display:block; font-size:12px; color:#0D1B4B; font-weight:600; margin-bottom:4px; }
+  input { width:100%; padding:10px 12px; margin-bottom:16px; border:1px solid #D5DCE3;
+          border-radius:8px; font-size:14px; box-sizing:border-box; }
+  button { width:100%; padding:12px; background:#00A651; color:#fff; border:none;
+           border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; }
+  button:hover { background:#008f45; }
+  .foot { margin-top:18px; text-align:center; font-size:11px; color:#5A646E; }
+  #msg { color:#00A651; font-weight:600; text-align:center; margin-top:10px; display:none; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>🐳 Portal Demo — TU NOMBRE</h1>
+    <p class="sub">Gestión de Contenedores · Universidad EAN</p>
+    <form onsubmit="event.preventDefault(); document.getElementById('msg').style.display='block';">
+      <label>Usuario</label>
+      <input type="text" placeholder="usuario@ejemplo.com" required>
+      <label>Contraseña</label>
+      <input type="password" placeholder="••••••••" required>
+      <button type="submit">Ingresar</button>
+      <div id="msg">✅ Demo: formulario capturado (sin backend)</div>
+    </form>
+    <div class="foot">Servido por nginx dentro de un contenedor Docker</div>
+  </div>
+</body>
+</html>
+EOF
 ```
 
-*(Alternativa sin editor: clona el repo del curso y copia el archivo:*
-`git clone https://github.com/Hackwy402/gestion_de_contenedores.git && cp gestion_de_contenedores/03-redes-conectividad/login-app/index.html ~/login-app/`*)*
+**Personalízalo**: cambia `TU NOMBRE` por el tuyo — es TU app. Para editarlo:
+`vi index.html` (o vuelve a pegar el bloque con tus cambios).
 
-**Personalízalo**: cambia el título por tu nombre — es TU app.
+*(El archivo también está en esta carpeta del repo —* [`index.html`](index.html) *—
+por si prefieres clonarlo:*
+`git clone https://github.com/Hackwy402/gestion_de_contenedores.git`*)*
 
 > ⚠️ Es una **maqueta sin backend**: el formulario no envía datos a ningún lado.
 > Nunca publiques un formulario real de credenciales sin cifrado ni backend seguro.

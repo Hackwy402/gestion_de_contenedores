@@ -17,7 +17,7 @@ nube híbrida. Cada semana se libera una sesión bajo su carpeta.
 |---|---|---|---|---|
 | 01 | [`01-fundamentos-hibrida/`](01-fundamentos-hibrida/) | Fundamentos de contenedores y arquitectura de nube híbrida | Primer contenedor + bitácora | ✅ Disponible |
 | 02 | [`02-imagenes-registro/`](02-imagenes-registro/) | Creación y gestión de imágenes: despliegue local y en la nube | Imagen propia publicada en Docker Hub | ✅ Disponible |
-| 03 | `03-redes-conectividad/` | Conectividad y redes entre entornos híbridos | App multi-contenedor en red aislada | 🔜 |
+| 03 | [`03-redes-conectividad/`](03-redes-conectividad/) | Conectividad y redes entre entornos híbridos | App multi-contenedor en red aislada | ✅ Disponible |
 | 04 | `04-persistencia-respaldo/` | Persistencia de datos: almacenamiento y respaldo | Volumen persistente + respaldo restaurado | 🔜 |
 | 05 | `05-portabilidad-orquestacion/` | Portabilidad, migración e introducción a la orquestación | Mini-proyecto: app migrada local → nube + demo Kubernetes | 🔜 |
 

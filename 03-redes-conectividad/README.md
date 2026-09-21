@@ -17,8 +17,17 @@ base de datos invisible para el mundo.
 ```
 03-redes-conectividad/
 ├── guia-lab.md                 # laboratorio de la sesión (participantes)
-└── diapositivas/               # deck de teoría (PPTX + PDF, 14 láminas) + guía en PDF
+├── diapositivas/               # deck de teoría (PPTX + PDF, 14 láminas) + guía en PDF
+└── login-app/                  # 🚀 TALLER: tu app en una VM real de Azure (de cero a Docker Hub)
 ```
+
+## 🚀 Taller complementario: [`login-app/`](login-app/)
+
+Del sandbox a la **infraestructura real**: creas tu propia VM Ubuntu en Azure
+(con tu cuenta Azure for Students), le instalas Docker, despliegas una app de
+login con nginx en el puerto 80 — abriendo tú mismo la regla del firewall (NSG) —
+y publicas la imagen en Docker Hub. Incluye guía paso a paso, `index.html`,
+`Dockerfile`, control de costos (deallocate al terminar) y tabla de errores comunes.
 
 El deck incluye: el patrón web/API/BD, la red bridge de fábrica y sus límites, redes
 definidas por el usuario y su DNS, el diagrama de puertos (la puerta única), el eje

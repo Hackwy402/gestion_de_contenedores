@@ -2,7 +2,7 @@
 
 **De «en mi máquina sí funciona» a desplegar la misma aplicación en local y en la
 nube** — curso teórico-práctico de contenedores con Docker, orientado a entornos de
-nube híbrida. Cada semana se libera una sesión bajo su carpeta.
+nube híbrida. **Curso completo: las 5 sesiones disponibles.** ✅
 
 > **Metodología:** teórico-práctica — cada sesión combina teoría aplicada (~50 min)
 > con laboratorio guiado (~60 min) y deja una evidencia práctica.
@@ -19,7 +19,7 @@ nube híbrida. Cada semana se libera una sesión bajo su carpeta.
 | 02 | [`02-imagenes-registro/`](02-imagenes-registro/) | Creación y gestión de imágenes: despliegue local y en la nube | Imagen propia publicada en Docker Hub | ✅ Disponible |
 | 03 | [`03-redes-conectividad/`](03-redes-conectividad/) | Conectividad y redes entre entornos híbridos | App multi-contenedor en red aislada | ✅ Disponible |
 | 04 | [`04-persistencia-respaldo/`](04-persistencia-respaldo/) | Persistencia de datos: almacenamiento y respaldo | Volumen persistente + respaldo restaurado · 🚀 inicia el [mini-proyecto](mini-proyecto.md) | ✅ Disponible |
-| 05 | `05-portabilidad-orquestacion/` | Portabilidad, migración e introducción a la orquestación | Mini-proyecto: app migrada local → nube + demo Kubernetes | 🔜 |
+| 05 | [`05-portabilidad-orquestacion/`](05-portabilidad-orquestacion/) | Portabilidad, migración e introducción a la orquestación | Mini-proyecto: app migrada local → nube + demo Kubernetes | ✅ Disponible |
 
 ## Empezar (3 pasos)
 
